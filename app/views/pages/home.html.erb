@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+<h2> Caso Portal CRM </h2>
+<h6> Aprendizaje 101 </h6>
+    <% if user_signed_in? %>
+        <p> Click en el siguiente enlace para agregar clientes </p>
+        <%=link_to 'Agregar cliente', new_customer_path, class: "button", style:"width: 200px"%>
+    <% else %>
+    <% end %>
+</div>
